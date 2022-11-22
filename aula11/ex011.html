@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>estrangeiro ou nao</title>
+    <style>
+        body{
+            background-color: rgb(21, 133, 127);
+            font:  17pt arial;
+        }
+        input {
+            font: normal 15pt arial;
+            position: center;
+
+        }
+    </style>
+  </head>
+  <body>
+    <center><h1>Qual país voce mora</h1>
+    <center><p><strong> A primeira letra e maiuscula !!</strong></p>
+   <center> Qual país você Nasceu:<br> <input type="search" name="txtn" id="txtn" />
+    <center><input type="button" value="verificar" onclick="verificando ()" />
+    <div id="res"></div>
+    <script>
+      function verificando() {
+        var txtp = document.getElementById("txtn");
+        var res = document.getElementById("res");
+        var pais = txtn.value;
+        res.innerHTML = `<p>Seu país e <strong>${pais}</strong></p>`;
+
+        if (pais === "Brasil" || pais === "Brazil") {
+          res.innerHTML += "Voce e brasileiro!";
+        } else {
+          res.innerHTML += "Voce e estrangeiro!";
+        }
+      }
+    </script>
+  </body>
+</html>

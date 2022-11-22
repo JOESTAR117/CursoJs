@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com Dom</title>
+    <style>
+        body {
+            background-color:rgb(93, 225, 230);
+            color: rgb(0, 0, 0);
+            font: normal 16pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript </p>
+    <div class="msg">clique em mim</div>
+    <script>
+      var corpo = document.body
+      var p1 =document.getElementsByTagName("p")[0]
+      /*var d = document.getElementById("msg") 
+      d.style.background="green"
+      d.innerText="Estou aguardando..."*/
+      var d = document.querySelector('div.msg')
+      d.innerText = "Ola"
+      d.style.background = "yellow"
+      d.style.color ="black"
+      d.style.font ="normal 25pt impact"
+      d.innerText = "KILL BILL 2"
+      p1.style.background="yellow"
+      p1.innerHTML = "Assista aqui"
+      p1.style.font="normal 15pt impact"
+      
+    </script>
+    
+</body>
+</html>
